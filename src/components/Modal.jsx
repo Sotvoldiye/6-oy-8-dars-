@@ -38,7 +38,7 @@ export default function Modal({ modal, setModal }) {
 
       <div className="orderTotal">
         <p className="orderTitle">Order Total</p>
-        <p className="allPrice">$46.50</p>
+        <p className="allPrice">${cart.reduce((total, p) => total + p.price * p.amount, 0)}</p>
       </div>
       <button onClick={() => setModal(false)} className="sendButton">
         Start New Order
