@@ -4,7 +4,6 @@ function Product({ d }) {
   const { dispatch, cart } = useGlobalContext();
   const { id, name, category, price, image } = d;
   const alreadyAdded = cart.find((d) => d.id == id);
-
   return (
     <div className="dessert-card">
       <picture>

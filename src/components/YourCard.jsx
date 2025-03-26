@@ -7,9 +7,8 @@ const YourCard = () => {
   const [modal, setModal] = useState(false)
   const images = cart.map(item => item.image.thumbnail);
   console.log(images); 
-  // const { id, name, category, price, image } = d;
-  // const alreadyAdded = cart.find((d) => d.id == id);
-
+  document.body.style.overflowY = modal ? "hidden" : "auto";
+  
   console.log(cart);
   if (cart.length === 0) {
     return (

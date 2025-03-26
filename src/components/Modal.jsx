@@ -5,6 +5,7 @@ export default function Modal({ modal, setModal }) {
   const { dispatch, cart } = useGlobalContext();
   console.log("Modal");
   return (
+    <div className="modal-overlay">
     <div className="modal">
       <div>
         <img src="./images/icon-order-confirmed.svg" alt="" />
@@ -43,6 +44,7 @@ export default function Modal({ modal, setModal }) {
       <button onClick={() => setModal(false)} className="sendButton">
         Start New Order
       </button>
+    </div>
     </div>
   );
 }
